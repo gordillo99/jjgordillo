@@ -43,10 +43,6 @@
     border: none;
 }
 
-#skills-table {
-  top-margin: 25px;
-}
-
 .content-header {
   color: #07BFB6;
 }
@@ -55,7 +51,7 @@
   padding-left: 20px;
 }
 
- .indented-content-projects {
+.indented-content-projects {
   padding-left: 40px;
 }
 
@@ -103,3 +99,20 @@ iframe {
 .social-media-info {
   color: white;
 }
+
+.skills-title {
+  font-size: 18px;
+}
+
+.skills-row ul {
+  padding-left: 60px;
+  list-style-type: none;
+}
+
+.skills-row li {
+  padding-left: 10px;
+}
+
+
+
+
