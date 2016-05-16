@@ -6,7 +6,7 @@ var app = express();
 
 var COMMENTS_FILE = path.join(__dirname, 'comments.json');
 
-app.set('port', (process.env.PORT || 3010));
+app.set('port', (process.env.PORT || 5000));
 
 app.use('/', express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
@@ -39,3 +39,6 @@ app.route('/')
 app.listen(app.get('port'), function() {
   console.log('Server started: http://localhost:' + app.get('port') + '/');
 });
+
+
+

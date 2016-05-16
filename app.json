@@ -1,13 +1,8 @@
 {
-  "name": "José's Resume",
-  "description": "Code from the React tutorial",
-  "keywords": [ "react", "reactjs", "tutorial" ],
-  "repository": "https://github.com/reactjs/react-tutorial",
-  "logo": "https://facebook.github.io/react/img/logo.svg",
-  "website": "http://facebook.github.io/react/docs/tutorial.html",
-  "success_url": "/",
-  "env" : {
-    "BUILDPACK_URL": "https://github.com/heroku/heroku-buildpack-nodejs.git"
-  }
+  "name": "Node.js Getting Started",
+  "description": "A barebones Node.js app using Express 4",
+  "repository": "https://github.com/heroku/node-js-getting-started",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": ["node", "express", "static"],
+  "image": "heroku/nodejs"
 }
-
