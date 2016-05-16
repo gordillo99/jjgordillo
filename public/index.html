@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Résumé</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/base.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="scripts/contentHandler.js"></script>
+  </head>
+  <body>
+
+    <!-- **************** NAVBAR **************** -->
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">José Gordillo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="navbar-link" href="?option=skills">Skills</a></li>
+            <li><a class="navbar-link" href="?option=work-experience">Work Experience</a></li>
+            <li><a class="navbar-link" href="?option=projects">Projects</a></li>
+            <li><a class="navbar-link" href="?option=about">About</a></li>
+            <li><a class="navbar-link" href="?option=contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- **************** END NAVBAR **************** -->
+
+    <!-- **************** MAIN CONTAINER **************** -->
+
+    <div id="main-container">
+      <div id="centered-content">
+
+        <div id="skills-content" hidden>
+          <section id="skills-section" class="container content-section">
+            <div class="row">
+              <div class="col-lg-8 col-lg-offset-2">
+                <h1 class="content-header">Skills</h1></br>
+                <table id="skills-table" class='table borderless'>
+                  <thead>
+                    <tr>
+                      <th>Programming Languages</th>
+                      <th>Aspect-Oriented Languages</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>C</td>
+                      <td>HTML</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div id="work-experience-content" hidden>
+          <section id="work-experience-section" class="container content-section">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                  <h1 class="content-header">Work Experience</h1></br>
+                  <h3 class="indented-content">Software Designer at Alcatel-Lucent</h3>
+                  <ul class="job-description">
+                    <li>Designed and programmed new features for a network supervision SmartClient web application using Javascript, HTML, and CSS</li>
+                    <li>Added features to a JBoss server using Java and object-oriented programming</li>
+                    <li>Fixed reported bugs and improved the graphical user interface of the network supervision web application</li>
+                  </ul>
+                  <h3 class="indented-content">Automation Engineer at Isolation Network, Inc.</h3>
+                  <ul class="job-description">
+                    <li>Designed and programmed a test automation framework for an electronic book distribution program using Java and Powershell</li>
+                    <li>Created a graphical user interface for the framework that allowed the user to select multiple test cases and to select the target server for  testing</li>
+                    <li>The framework accessed databases in SQL servers, used Powershell scripts for remote file handling, and used Java regular expressions for validation</li>
+                  </ul>
+                  <h3 class="indented-content">Quality Assurance Engineer at Intel Corporation / Recon Instruments</h3>
+                  <ul class="job-description">
+                    <li>Designed and programmed an automated testing framework to test the company’s products using Java and Bash scripts</li>
+                    <li>Programmed automated tests for Android devices implementing the Robotium and Google UI Automator libraries</li>
+                    <li>Programmed automated tests for the company’s website using Selenium</li>
+                  </ul>
+                  <h3 class="indented-content">Lab Technician at Atel Communications</h3>
+                  <ul class="job-description">
+                    <li>Designed and developed Java applications that implemented  a GUI, generated reports, and connected to SQL dbs</li>
+                    <li>Performed maintenance and adjustment of technical equipment</li>
+                  </ul>
+                </div>
+              </div>
+          </section>
+        </div>
+
+        <div id="projects-content" hidden>
+          <section id="projects-section" class="container content-section">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                  <h1 class="content-header">Projects</h1>
+
+                  <h3 class="indented-content">First Year Project: Automated IR Signal Tracking Robot</h3></br>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/sPHa-oSBYXs" frameborder="0" allowfullscreen></iframe></br>
+                  <h3 class="indented-content">Study Room Booking Website</h3>
+                  <a class="indented-content-projects" href="http://bookmyroom.herokuapp.com/">Book My Room Website</a>
+                  <p class="indented-content-projects">Username: admin</p>
+                  <p class="indented-content-projects">Password: adminadmin123</p>
+                  <h3 class="indented-content">Other Projects</h3>
+                  <ul class="indented-content-projects">
+                    <li>Currently working on an online Blackjack website written in C++, Javascript, HTML, and CSS using SFML, AngularJS, MongoDB, Express.js, and Node.js</li>
+                    <li>Currently working on an online Social Media website based on the idea of sharing quotes using AngularJS, Cassandra, Express.js, and Node.js</li>
+                    <li>Created a “move-to-front” encoder/decoder written in Python and then in C </li>
+                  </ul>
+                </div>
+              </div>
+          </section>
+        </div>
+
+        <div id="about-content" hidden>
+          <section id="about-section" class="container content-section">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                  <h1 class="content-header">About</h1></br>
+                  <p><img class="img-thumbnail" id="about-image" src="images/jj-pic.jpg" width="190" height="260">
+                    I'm on my 3rd year of Sotftware Engineering at the University of Victoria. I am originally from Guatemala. I'm an extroverted and friendly guy. 
+                  </p>
+                  <p>
+                    I started programming at the age of 13. I started learning DarkBasic, a Basic-based language used for video game development. I got even more engaged with programming when I was 18. I started taking an algorithms course at a university in Guatemala. I immediately recognized my love for programming. 
+                  </p>
+                  <p>   
+                    Lately, I have mostly been focusing on web development. I have worked with AngularJS on school projects, and with Ruby on Rails and Rendr on co-ops. I am also quite interested in React.js. My favorite language is C++. I love having more direct control over the memory while still having a fast langauge with the advantages of OOP. I am also a huge fan of smart pointers. 
+                  </p>
+                  <p>   
+                    My hobbies are playing tennis, scuba diving, reading about philosophy and quantum physics, programming, and playing video games. 
+                  </p>
+                </div>
+              </div>
+          </section>
+        </div>
+
+        <div id="contact-content" hidden>
+          <section id="contact-section" class="container content-section">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                  <h1 class="content-header">Contact</h1></br>
+                  <div id="contact-rectangle"></br></br>
+                    <p class="contact-info">Email: gordillo \at\ uvic \dot\ ca</p>
+                    <p class="contact-info">Location: Birchwood Street, Victoria, BC</p></br>
+                      <ul class="social-media">
+                        <li>
+                          <a class="social-media-info" href="https://github.com/gordillo99"><img src="images/github_black.png" alt="github" width="42" height="42" align="middle">Check out my Github page</a>
+                        </li> 
+                        <li>
+                          <a class="social-media-info" href="https://ca.linkedin.com/in/jogordillo"><img src="images/Li.jpeg" alt="linkedin" width="42" height="42" align="middle">Check out my Linked In page</a>
+                        </li>
+                      </ul>
+                  </div>
+                </div>
+              </div>
+          </section>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- **************** END MAIN CONTAINER **************** -->
+
+  </body>
+</html>
