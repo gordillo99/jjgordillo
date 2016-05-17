@@ -52,10 +52,6 @@
   padding-left: 20px;
 }
 
-.indented-content-projects {
-  padding-left: 40px;
-}
-
 .indented-content ul {
   padding-left: 40px;
 }
@@ -88,17 +84,17 @@ iframe {
   font-size: 16px;
 }
 
-.socila-media {
-  padding-left: 20px;
-}
-
-.social-media li{
+.social-media li {
   padding-left: 60px;
   display: inline-block;
 }
 
 .social-media-info {
   color: white;
+}
+
+.social-media-info:hover {
+  color: #07BFB6;
 }
 
 .skills-title {
@@ -140,8 +136,28 @@ iframe {
   padding-left: 20px;
 }
 
-.job-description {
+.indented-content-projects li {
+  padding-bottom: 10px;
+}
+
+.indented-content-projects p {
+  margin-bottom: 0px;
+}
+
+.job-description, .indented-content-projects{
   list-style-type: none;
+}
+
+.img-wrapper:hover .fa-stack{
+  color: #07BFB6;
+  transition: 0.9s;
+  transform: rotateY(180deg);
+}
+.img-wrapper{
+  align: middle;
+  display: inline-block;
+  overflow: hidden;
+  text-align: center;
 }
 
 
