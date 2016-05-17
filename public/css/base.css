@@ -118,6 +118,33 @@ iframe {
   margin-left: 10px;
 }
 
+.position-and-workplace ul {
+  list-style-type: none;
+  list-style-position: outside;
+}
+
+.position-and-workplace li{
+  display: inline-block;
+}
+
+.header-no-margin-top {
+  margin-top: 0px;
+}
+
+.header-no-margin-bottom {
+  margin-bottom: 0px;
+}
+
+.job-description li{
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+.job-description {
+  list-style-type: none;
+}
+
+
 
 
 
