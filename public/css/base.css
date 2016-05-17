@@ -12,6 +12,7 @@
   color: white;
   font-size: 40px;
   font-weight: bold;
+  font-family: Gill Sans, Verdana;
 }
 
 .navbar-default .navbar-brand:hover {
@@ -28,6 +29,7 @@
 
 .navbar-link {
   font-size: 18px;
+  font-family: Gill Sans, Verdana;
   border:4px solid black;
   transition: border 0.8s ease;
 }
@@ -92,11 +94,13 @@ iframe {
 .contact-info {
   padding-left: 20px;
   color: #07BFB6;
+  font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
   font-size: 16px;
 }
 
 .social-media li {
-  padding-left: 60px;
+  font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+  padding-left: 10px;
   display: inline-block;
 }
 
@@ -205,19 +209,45 @@ iframe {
   100% { transform: translateY(2px); }
 }
 
-.skill-column {
+.skill-column, .project-container {
   border:4px solid white;
   transition: border 0.6s ease;
 }
 
-.skill-column:hover {
+.skill-column:hover, .project-container:hover {
   border:4px solid black;
+}
+
+.skill-column li {
+  font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+}
+
+.skill-column h1, .content-header {
+  font-family: Gill Sans, Verdana;
+  font-weight: bold;
 }
 
 .contact-info:hover {
   color: white;
 }
 
+.about-text {
+  font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+}
+
+#about-image {
+  box-shadow: 10px 10px 5px #888888;
+  border: 2px solid black;
+}
+
+.project-title {
+  font-family: Gill Sans, Verdana;
+  font-weight: bold;
+}
+
+.indented-content-projects {
+  font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+}
 
 
 
