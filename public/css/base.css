@@ -209,17 +209,33 @@ iframe {
   100% { transform: translateY(2px); }
 }
 
-.skill-column, .project-container {
+.skill-column, .job-column, .project-container {
   border:4px solid white;
   transition: border 0.6s ease;
 }
 
-.skill-column:hover, .project-container:hover {
+.skill-column:hover, .job-column:hover, .project-container:hover {
   border:4px solid black;
+}
+
+.job-column-changing-header, .project-changing-header {
+  color: black;
+}
+
+.job-column:hover .skill-column-changing-header, .project-container:hover .project-changing-header {
+  color: #07BFB6;
 }
 
 .skill-column li {
   font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+}
+
+.job-description li {
+  font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+}
+
+.position-and-workplace {
+  font-family: Gill Sans, Verdana;
 }
 
 .skill-column h1, .content-header {
@@ -238,6 +254,19 @@ iframe {
 #about-image {
   box-shadow: 10px 10px 5px #888888;
   border: 2px solid black;
+}
+
+#bmr-image {
+
+  box-shadow: 10px 10px 5px #888888;
+  border: 1px solid black;
+}
+
+#IR-robot-video {
+  margin-bottom: 30px;
+  padding-left: 0px;
+  box-shadow: 10px 10px 5px #888888;
+  border: 1px solid black;
 }
 
 .project-title {
