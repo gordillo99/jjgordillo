@@ -163,6 +163,10 @@ iframe {
   list-style-type: none;
 }
 
+.github-project {
+  color: black;
+}
+
 .img-wrapper:hover .fa-stack{
   color: #07BFB6;
   transition: 0.9s;
@@ -256,10 +260,13 @@ iframe {
   border: 2px solid black;
 }
 
-#bmr-image {
-
+#bmr-image, #blackjack-image {
   box-shadow: 10px 10px 5px #888888;
   border: 1px solid black;
+}
+
+#blackjack-image {
+  padding: 5px;
 }
 
 #IR-robot-video {
@@ -277,6 +284,9 @@ iframe {
 .indented-content-projects {
   font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
 }
+
+
+
 
 
 
