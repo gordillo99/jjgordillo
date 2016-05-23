@@ -15,7 +15,7 @@
   <body>
 
     <!-- **************** NAVBAR **************** -->
-
+  
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -51,15 +51,13 @@
           <section id="main-page-section" class="container content-section">
             <div class="row">
               <div class="col-lg-8 col-lg-offset-2">
-                <!--<h1 class="content-header">Welcome to my Résumé Website!</h1>-->
-                <!--<img class=".img-thumbnail" id="logo-image" src="images/free_logo.jpg" width="100" height="100">-->
                 <div class="main-page-intro-content">
                   <ul>
                     <li><img class=".img-thumbnail" id="main-jj-image" src="images/circular-jj.png" width="300" height="300"></li>
                     <li><h2 class="main-page-salute">Hi, I'm José</h2></li>
                   </ul>
                   <li><h2 class="main-page-welcome-text">A bit about me:</h2></li>
-                  <ul>
+                  <ul class="welcome-page-buttons">
                     <li>
                       <form method="get" action="files/JoseGordilloResume.pdf">
                         <button type="submit" class="btn btn-default main-page-button ">Résumé</button>
@@ -68,6 +66,29 @@
                     <li><a href="?option=work-experience" class="btn btn-default main-page-button ">Work Experience</a></li>
                     <li><a href="?option=skills" class="btn btn-default main-page-button">Skills</a></li>
                   </ul>
+                  <h2 class="main-page-some-projects">Some of my projects:</h2>
+                  <ul class="img-list">
+                    <li>
+                      <a href="?option=projects-bookmyroom">
+                        <img class="projects-with-text" src="images/bmr.png" width="150" height="150" />
+                        <span class="text-content"><span>Book My Room</span></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="?option=projects-blackjack">
+                        <img class="projects-with-text" src="images/blackjack-thumbnail.JPG" width="150" height="150" />
+                        <span class="text-content"><span>Blackjack Application</span></span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="?option=projects-ir-robot">
+                        <img class="projects-with-text" src="images/ir-robot2.png" width="150" height="150" />
+                        <span class="text-content"><span>IR Tracking Robot</span></span>
+                      </a>
+                    </li>
+
+                  </ul>
+
                 </div>
               </div>
             </div>
@@ -323,7 +344,7 @@
                     </ul>
                   </div>
 
-                  <div class="project-container">
+                  <div class="project-container" id="bookmyroom-project">
                     <h3 class="indented-content project-title project-changing-header">Study Room Booking Website</h3>
                     <ul class="indented-content-projects">
                       <li><p class="indented-content-projects">This second year software engineering project consisted of creating a booking website for university study rooms</li>
@@ -341,7 +362,7 @@
                     </ul>
                   </div>
 
-                  <div class="project-container">
+                  <div class="project-container" id="blackjack-project">
                     <h3 class="indented-content project-title project-changing-header">C++ Desktop Blackjack Application</h3>
                     <ul class="indented-content-projects">
                       <li>Currently working on an online Blackjack desktop application written in C++ using SFML (Simple and Fast Multimedia Library)</li>
@@ -422,8 +443,15 @@
           </section>
 
         </div>
+        <!--
+        <div id="footer">
+
+        </div>
+        -->
+
       </div>
     </div>
+   
 
     <!-- **************** END MAIN CONTAINER **************** -->
 
