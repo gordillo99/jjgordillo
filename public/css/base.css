@@ -119,6 +119,7 @@
 }
 
 .welcome-page-buttons {
+  margin-left: 100px;
   margin-bottom: 25px;
 }
 
@@ -151,6 +152,7 @@ ul.img-list li {
 .projects-with-text {
   box-shadow: 10px 10px 5px #888888;
   border: 1px solid black;
+  margin-bottom: 40px;
 }
 
 span.text-content {
