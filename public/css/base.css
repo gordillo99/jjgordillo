@@ -53,8 +53,63 @@
 
 /* CONTENT */
 
+
+/* MAIN PAGE CONTENT */
+
+#main-jj-image {
+  margin-top: 40px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.main-page-intro-content ul{
+  list-style-type: none;
+}
+
+.main-page-intro-content li{
+  display: inline-block;
+}
+
+.main-page-salute {
+  font-family: Gill Sans, Verdana;
+  font-size: 65px;
+  padding-left: 40px;
+  position:relative;
+  top:30px;
+}
+
+.main-page-welcome-text {
+  font-family: Gill Sans, Verdana;
+  font-size: 65px;
+  padding-left: 160px;
+  margin-bottom: 40px;
+}
+
+.main-page-button {
+  font-size: 40px;
+  margin-right: 27px;
+}
+
+.btn-default {
+  font-family: Gill Sans, Verdana;
+  border: solid black 2px;
+  color: #07BFB6;
+}
+
+.btn-default:hover {
+  color: white;
+  background: black;
+}
+
+/* REST OF THE CONTENT */
+
+.right-aligned-header {
+  float: right;
+  margin-right: 40px;
+}
+
 .borderless td, .borderless th {
-    border: none;
+  border: none;
 }
 
 .content-header {
@@ -71,11 +126,6 @@
 
 iframe {
   padding-left: 40px;
-}
-
-#about-image {
-    float: right;
-    margin: 0px 0px 15px 20px;
 }
 
 #bmr-link {
@@ -258,6 +308,9 @@ iframe {
 #about-image {
   box-shadow: 10px 10px 5px #888888;
   border: 2px solid black;
+  margin-bottom: 180px;
+  float: right;
+  margin: 0px 0px 15px 20px;
 }
 
 #bmr-image, #blackjack-image {
@@ -284,6 +337,40 @@ iframe {
 .indented-content-projects {
   font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
 }
+
+/* MAIN PAGE ANIMATIONS */
+
+#main-jj-image, #about-image {
+  -moz-animation-name: showLogoSlowly;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-duration: 4s;
+
+  -webkit-animation-name: showLogoSlowly;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: 4s;
+
+  animation-name: showLogoSlowly;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+  animation-duration: 4s;
+}
+
+@-moz-keyframes showLogoSlowly {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}
+@-webkit-keyframes showLogoSlowly {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes showLogoSlowly {
+  from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
 
 
 

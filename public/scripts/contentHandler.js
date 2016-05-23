@@ -7,7 +7,7 @@ $(document).ready(function() {
 	option = url.match(/option=(.*)/);
 
 	if (option === null) {
-		showDiv("skills", $mainContainer);
+		showDiv("main-page", $mainContainer);
 	} else {
 		showDiv(option[1], $mainContainer);
 	}
