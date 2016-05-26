@@ -15,8 +15,8 @@
   <body>
 
     <!-- **************** NAVBAR **************** -->
-  
-    <nav class="navbar navbar-default">
+
+    <nav class="navbar navbar-default menu">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -28,78 +28,186 @@
           <a class="navbar-brand" href="/">José Gordillo</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          </form>
           <ul class="nav navbar-nav navbar-right">
             <li><a class="navbar-link" href="/">Home</a></li>
-            <li><a class="navbar-link" href="?option=skills">Skills</a></li>
-            <li><a class="navbar-link" href="?option=work-experience">Work Experience</a></li>
-            <li><a class="navbar-link" href="?option=projects">Projects</a></li>
+            <li><a class="navbar-link" href="#work-experience-section">Work Experience</a></li>
+            <li><a class="navbar-link" href="#projects-stripe">Projects</a></li>
+            <li><a class="navbar-link" href="#skills-stripe">Skills</a></li>
             <li><a class="navbar-link" href="?option=about">About</a></li>
-            <li><a class="navbar-link" href="?option=contact">Contact</a></li>
+            <li><a class="navbar-link" href="#contact-stripe">Contact</a></li>
           </ul>
         </div>
       </div>
     </nav>
+
     
     <!-- **************** END NAVBAR **************** -->
 
     <!-- **************** MAIN CONTAINER **************** -->
     <div id="main-container">
       <div id="centered-content">
-       
-        <div id="main-page-content" hidden>
-          <section id="main-page-section" class="container content-section">
-            <div class="row">
-              <div class="col-lg-8 col-lg-offset-2">
-                <div class="main-page-intro-content">
-                  <ul>
-                    <li><img class=".img-thumbnail" id="main-jj-image" src="images/circular-jj.png" width="300" height="300"></li>
-                    <li><h2 class="main-page-salute">Hi, I'm José</h2></li>
-                  </ul>
-                  <li><h2 class="main-page-welcome-text">A bit about me:</h2></li>
-                  <ul class="welcome-page-buttons">
-                    <li>
-                      <form method="get" action="files/JoseGordilloResume.pdf">
-                        <button type="submit" class="btn btn-default main-page-button ">Résumé</button>
-                      </form>
-                    </li>
-                    <li><a href="?option=work-experience" class="btn btn-default main-page-button ">Work</a></li>
-                    <li><a href="?option=skills" class="btn btn-default main-page-button">Skills</a></li>
-                  </ul>
-                  <h2 class="main-page-some-projects">Some of my projects:</h2>
-                  <ul class="img-list">
-                    <li>
-                      <a href="?option=projects-bookmyroom">
-                        <img class="projects-with-text" src="images/bmr.png" width="150" height="150" />
-                        <span class="text-content"><span>Book My Room</span></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="?option=projects-blackjack">
-                        <img class="projects-with-text" src="images/blackjack-thumbnail.JPG" width="150" height="150" />
-                        <span class="text-content"><span>Blackjack Application</span></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="?option=projects-ir-robot">
-                        <img class="projects-with-text" src="images/ir-robot2.png" width="150" height="150" />
-                        <span class="text-content"><span>IR Tracking Robot</span></span>
-                      </a>
-                    </li>
 
-                  </ul>
+        <div id="main-page-programming-image-wrapper-content" hidden>
 
+          <img id="main-page-programming-image" src="images/programming.jpg">
+          <div id="main-page-content">
+            <section id="main-page-section" class="container content-section">
+              <div class="row" id="welcome-section">
+                <div class="col-lg-8 col-lg-offset-2">
+                  <div class="main-page-intro-content">
+
+                    <ul>
+                      <li class="main-page-image-list-element"><img class=".img-thumbnail" id="main-jj-image" src="images/circular-jj.png" width="300" height="300"></li>
+                      <li class="main-page-image-list-element">
+                        <ul class="welcome-page-buttons">
+                          <li>
+                            <form method="get" action="files/JoseGordilloResume.pdf">
+                              <button id="slide-button-1" type="submit" class="btn btn-default main-page-button">Résumé</button>
+                            </form>
+                          </li>
+                          <li><a id="slide-button-2" href="?option=work-experience" class="btn btn-default main-page-button">Work</a></li>
+                          <li><a id="slide-button-3" href="?option=skills" class="btn btn-default main-page-button">Skills</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <section id="work-experience-section" class="container content-section">
+                      <div class="col-lg-8">
+                        <h2 class="main-page-projects-title">Work Experience</h2>
+
+                        <div class="job-column">
+                          <ul class="position-and-workplace">
+                            <li><h3 class="header-no-margin-bottom skill-column-changing-header">Software Engineering Intern</h3></li>
+                            <li class="right-aligned-header"><h3 class="header-no-margin-bottom skill-column-changing-header">Change.org</h3></li>
+                          </ul>
+                          <ul class="position-and-workplace">
+                            <li><h4 class="header-no-margin-top">May 2016 – Aug. 2016</h4></li>
+                            <li class="right-aligned-header"><h4 class=" header-no-margin-top"><i class="fa fa-map-marker" aria-hidden="true"></i>Victoria, BC</h4></li>
+                          </ul>
+                          <ul class="job-description">
+                            <li>Designed and programmed new features for the Change.org website using Ruby on Rails, HTML, and CSS</li>
+                            <li>Fixed bugs on the website using Rendr (with Backbone.js)</li>
+                          </ul>
+                        </div>
+
+                        <div class="job-column">
+                          <ul class="position-and-workplace">
+                            <li><h3 class="header-no-margin-bottom skill-column-changing-header">Software Designer</h3></li>
+                            <li class="right-aligned-header"><h3 class="header-no-margin-bottom skill-column-changing-header">Nokia</h3></li>
+                          </ul>
+                          <ul class="position-and-workplace">
+                            <li><h4 class="header-no-margin-top">Sept. 2015 – Dec. 2015</h4></li>
+                            <li class="right-aligned-header"><h4 class="header-no-margin-top"><i class="fa fa-map-marker" aria-hidden="true"></i>Ottawa, ON</h4></li>
+                          </ul>
+                          <ul class="job-description">
+                            <li>Designed and programmed new features for a network supervision SmartClient web application using Javascript, HTML, and CSS</li>
+                            <li>Added features to a JBoss server using Java and object-oriented programming</li>
+                            <li>Fixed reported bugs and improved the graphical user interface of the network supervision web application</li>
+                          </ul>
+                        </div>
+
+                        <div class="job-column">
+                          <ul class="position-and-workplace">
+                            <li><h3 class="header-no-margin-bottom skill-column-changing-header">Automation Engineer</h3></li>
+                            <li class="right-aligned-header"><h3 class="header-no-margin-bottom skill-column-changing-header">Isolation Network</h3></li>
+                          </ul>
+                          <ul class="position-and-workplace">
+                            <li><h4 class="header-no-margin-top">Sept. 2014 – Dec. 2014</h4></li>
+                            <li class="right-aligned-header"><h4 class="header-no-margin-top"><i class="fa fa-map-marker" aria-hidden="true"></i>Victoria, BC</h4></li>
+                          </ul>
+                          <ul class="job-description">
+                            <li>Designed and programmed a test automation framework for an electronic book distribution program using Java and Powershell</li>
+                            <li>Created a graphical user interface for the framework that allowed the user to select multiple test cases and to select the target server for  testing</li>
+                            <li>The framework accessed databases in SQL servers, used Powershell scripts for remote file handling, and used Java regular expressions for validation</li>
+                          </ul>
+                        </div>
+
+                        <div class="job-column">
+                          <ul class="position-and-workplace">
+                            <li><h3 class="header-no-margin-bottom skill-column-changing-header">Quality Assurance Engineer</h3></li>
+                            <li class="right-aligned-header"><h3 class="header-no-margin-bottom skill-column-changing-header">Recon Instruments</h3></li>
+                          </ul>
+                          <ul class="position-and-workplace">
+                            <li><h4 class="header-no-margin-top">Jan. 2014 – Apr. 2014</h4></li>
+                            <li class="right-aligned-header"><h4 class="header-no-margin-top"><i class="fa fa-map-marker" aria-hidden="true"></i>Vancouver, BC</h4></li>
+                          </ul>
+                          <ul class="job-description">
+                            <li>Designed and programmed an automated testing framework to test the company’s products using Java and Bash scripts</li>
+                            <li>Programmed automated tests for Android devices implementing the Robotium and Google UI Automator libraries</li>
+                            <li>Programmed automated tests for the company’s website using Selenium</li>
+                          </ul>
+                        </div>
+
+                        <div class="job-column">
+                          <ul class="position-and-workplace">
+                            <li><h3 class="header-no-margin-bottom skill-column-changing-header" >Lab Technician</h3></li>
+                            <li class="right-aligned-header"><h3 class="header-no-margin-bottom skill-column-changing-header">Atel Communications</h3></li>
+                          </ul>
+                          <ul class="position-and-workplace">
+                            <li><h4 class="header-no-margin-top">May 2013 – Aug. 2013</h4></li>
+                            <li class="right-aligned-header"><h4 class="header-no-margin-top"><i class="fa fa-map-marker" aria-hidden="true"></i>Guatemala City, Guatemala</h4></li>
+                          </ul>
+                          <ul class="job-description">
+                            <li>Designed and developed Java applications that implemented  a GUI, generated reports, and connected to SQL databases</li>
+                            <li>Performed maintenance and adjustment of technical equipment</li>
+                          </ul>
+                        </div>
+                      </div>
+
+                    </section>
+
+                    
+
+                  </div>
                 </div>
               </div>
-            </div>
-          </section>
-        </div>
+            </section>
+          </div>
 
-        <div id="skills-content" hidden>
-          <section id="skills-section" class="container content-section">
+          <div class="black-stripe" id="projects-stripe">
+
+            <h2 class="main-page-projects-title center-stripe">Projects</h2>
+              <ul class="img-list">
+                <li>
+                  <a href="?option=projects-bookmyroom">
+                    <img class="projects-with-text" src="images/bmr.png" width="150" height="150" />
+                    <span class="text-content"><span>Book My Room</span></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="?option=projects-blackjack">
+                    <img class="projects-with-text" src="images/blackjack-thumbnail.JPG" width="150" height="150" />
+                    <span class="text-content"><span>Blackjack Application</span></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="?option=projects-ir-robot">
+                    <img class="projects-with-text" src="images/ir-robot2.png" width="150" height="150" />
+                    <span class="text-content"><span>IR Tracking Robot</span></span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="img-list">
+                <li>
+                  <a href="?option=projects-encoder_decoder">
+                    <img class="projects-with-text" src="images/lock.jpg" width="150" height="150" />
+                    <span class="text-content"><span>Encoder/Decoder</span></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="?option=projects-personal_website">
+                    <img class="projects-with-text" src="images/person-white.png" width="150" height="150" />
+                    <span class="text-content"><span>Résumé Website</span></span>
+                  </a>
+                </li>
+              </ul>
+        
+          </div> <!--black stripe -->
+
+          <section id="skills-stripe" class="container content-section">
             <div class="row">
               <div class="col-lg-8 col-lg-offset-2">
-                <h1 class="content-header">Skills</h1>
+                <h1 class="main-page-projects-title">Skills</h1>
                 <div class="row skills-row">
                   <div class="col-lg-6 skill-column">
                     <ul>
@@ -234,96 +342,39 @@
               </div>
             </div>
           </section>
-        </div>
 
-        <div id="work-experience-content" hidden>
-          <section id="work-experience-section" class="container content-section">
-            <div class="row">
+          <div class="black-stripe black-stripe2" id="contact-stripe">
+            <section id="contact-section" class="container content-section">
+              <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
-                  <h1 class="content-header">Work Experience</h1>
-
-                  <div class="job-column">
-                    <ul class="position-and-workplace">
-                      <li><h3 class="header-no-margin-bottom skill-column-changing-header">Software Engineering Intern</h3></li>
-                      <li class="right-aligned-header"><h3 class="header-no-margin-bottom skill-column-changing-header">Change.org</h3></li>
-                    </ul>
-                    <ul class="position-and-workplace">
-                      <li><h4 class="header-no-margin-top">May 2016 – Aug. 2016</h4></li>
-                      <li class="right-aligned-header"><h4 class=" header-no-margin-top"><i class="fa fa-map-marker" aria-hidden="true"></i>Victoria, BC</h4></li>
-                    </ul>
-                    <ul class="job-description">
-                      <li>Designed and programmed new features for the Change.org website using Ruby on Rails, HTML, and CSS</li>
-                      <li>Fixed bugs on the website using Rendr (with Backbone.js)</li>
-                    </ul>
+                  <h1 class="main-page-projects-title">Contact</h1></br>
+                  <div>
+                    <p class="contact-info">Email: gordillo \at\ uvic \dot\ ca</p>
+                    <p class="contact-info">Location: Birchwood Street, Victoria, BC</p>
+                      <ul class="social-media">
+                        <li>
+                          <div class="img-wrapper">
+                            <a class="social-media-info" href="https://github.com/gordillo99"><span class="fa-stack fa-3x"><i class="fa fa-github" aria-hidden="true"></i></span>Check out my Github page</a>
+                          </div>
+                        </li> 
+                        <li>
+                          <div class="img-wrapper">
+                            <a class="social-media-info" href="https://ca.linkedin.com/in/jogordillo"><span class="fa-stack fa-3x"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>Check out my Linked in page</a>
+                          </div>
+                        </li>
+                      </ul>
                   </div>
-
-                  <div class="job-column">
-                    <ul class="position-and-workplace">
-                      <li><h3 class="header-no-margin-bottom skill-column-changing-header">Software Designer</h3></li>
-                      <li class="right-aligned-header"><h3 class="header-no-margin-bottom skill-column-changing-header">Nokia</h3></li>
-                    </ul>
-                    <ul class="position-and-workplace">
-                      <li><h4 class="header-no-margin-top">Sept. 2015 – Dec. 2015</h4></li>
-                      <li class="right-aligned-header"><h4 class="header-no-margin-top"><i class="fa fa-map-marker" aria-hidden="true"></i>Ottawa, ON</h4></li>
-                    </ul>
-                    <ul class="job-description">
-                      <li>Designed and programmed new features for a network supervision SmartClient web application using Javascript, HTML, and CSS</li>
-                      <li>Added features to a JBoss server using Java and object-oriented programming</li>
-                      <li>Fixed reported bugs and improved the graphical user interface of the network supervision web application</li>
-                    </ul>
-                  </div>
-
-                  <div class="job-column">
-                    <ul class="position-and-workplace">
-                      <li><h3 class="header-no-margin-bottom skill-column-changing-header">Automation Engineer</h3></li>
-                      <li class="right-aligned-header"><h3 class="header-no-margin-bottom skill-column-changing-header">Isolation Network</h3></li>
-                    </ul>
-                    <ul class="position-and-workplace">
-                      <li><h4 class="header-no-margin-top">Sept. 2014 – Dec. 2014</h4></li>
-                      <li class="right-aligned-header"><h4 class="header-no-margin-top"><i class="fa fa-map-marker" aria-hidden="true"></i>Victoria, BC</h4></li>
-                    </ul>
-                    <ul class="job-description">
-                      <li>Designed and programmed a test automation framework for an electronic book distribution program using Java and Powershell</li>
-                      <li>Created a graphical user interface for the framework that allowed the user to select multiple test cases and to select the target server for  testing</li>
-                      <li>The framework accessed databases in SQL servers, used Powershell scripts for remote file handling, and used Java regular expressions for validation</li>
-                    </ul>
-                  </div>
-
-                  <div class="job-column">
-                    <ul class="position-and-workplace">
-                      <li><h3 class="header-no-margin-bottom skill-column-changing-header">Quality Assurance Engineer</h3></li>
-                      <li class="right-aligned-header"><h3 class="header-no-margin-bottom skill-column-changing-header">Recon Instruments</h3></li>
-                    </ul>
-                    <ul class="position-and-workplace">
-                      <li><h4 class="header-no-margin-top">Jan. 2014 – Apr. 2014</h4></li>
-                      <li class="right-aligned-header"><h4 class="header-no-margin-top"><i class="fa fa-map-marker" aria-hidden="true"></i>Vancouver, BC</h4></li>
-                    </ul>
-                    <ul class="job-description">
-                      <li>Designed and programmed an automated testing framework to test the company’s products using Java and Bash scripts</li>
-                      <li>Programmed automated tests for Android devices implementing the Robotium and Google UI Automator libraries</li>
-                      <li>Programmed automated tests for the company’s website using Selenium</li>
-                    </ul>
-                  </div>
-
-                  <div class="job-column">
-                    <ul class="position-and-workplace">
-                      <li><h3 class="header-no-margin-bottom skill-column-changing-header" >Lab Technician</h3></li>
-                      <li class="right-aligned-header"><h3 class="header-no-margin-bottom skill-column-changing-header">Atel Communications</h3></li>
-                    </ul>
-                    <ul class="position-and-workplace">
-                      <li><h4 class="header-no-margin-top">May 2013 – Aug. 2013</h4></li>
-                      <li class="right-aligned-header"><h4 class="header-no-margin-top"><i class="fa fa-map-marker" aria-hidden="true"></i>Guatemala City, Guatemala</h4></li>
-                    </ul>
-                    <ul class="job-description">
-                      <li>Designed and developed Java applications that implemented  a GUI, generated reports, and connected to SQL databases</li>
-                      <li>Performed maintenance and adjustment of technical equipment</li>
-                    </ul>
-                  </div>
-
                 </div>
               </div>
           </section>
-        </div>
+              
+        
+        </div> <!--black stripe -->
+
+
+
+
+      </div> <!-- da wrapper -->
 
         <div id="projects-content" hidden>
           <section id="projects-section" class="container content-section">
@@ -417,32 +468,7 @@
           </section>
         </div>
 
-        <div id="contact-content" hidden>
-          <section id="contact-section" class="container content-section">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                  <h1 class="content-header">Contact</h1></br>
-                  <div id="contact-rectangle"></br></br>
-                    <p class="contact-info">Email: gordillo \at\ uvic \dot\ ca</p>
-                    <p class="contact-info">Location: Birchwood Street, Victoria, BC</p>
-                      <ul class="social-media">
-                        <li>
-                          <div class="img-wrapper">
-                            <a class="social-media-info" href="https://github.com/gordillo99"><span class="fa-stack fa-3x"><i class="fa fa-github" aria-hidden="true"></i></span>Check out my Github page</a>
-                          </div>
-                        </li> 
-                        <li>
-                          <div class="img-wrapper">
-                            <a class="social-media-info" href="https://ca.linkedin.com/in/jogordillo"><span class="fa-stack fa-3x"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>Check out my Linked in page</a>
-                          </div>
-                        </li>
-                      </ul>
-                  </div>
-                </div>
-              </div>
-          </section>
-
-        </div>
+        
         <!--
         <div id="footer">
 
