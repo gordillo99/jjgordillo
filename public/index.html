@@ -30,11 +30,10 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
             <li><a class="navbar-link" href="/">Home</a></li>
-            <li><a class="navbar-link" href="#work-experience-section">Work Experience</a></li>
-            <li><a class="navbar-link" href="#projects-stripe">Projects</a></li>
-            <li><a class="navbar-link" href="#skills-stripe">Skills</a></li>
-            <li><a class="navbar-link" href="?option=about">About</a></li>
-            <li><a class="navbar-link" href="#contact-stripe">Contact</a></li>
+            <li><a id="#navbar-work-experience" class="navbar-link" href="/#work-experience-stripe">Work Experience</a></li>
+            <li><a id="#navbar-Projects" class="navbar-link" href="/#projects-stripe">Projects</a></li>
+            <li><a id="#navbar-skills"class="navbar-link" href="/#skills-stripe">Skills</a></li>
+            <li><a id="#navbar-contact" class="navbar-link" href="/#contact-stripe">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -47,7 +46,7 @@
     <div id="main-container">
       <div id="centered-content">
 
-        <div id="main-page-programming-image-wrapper-content" hidden>
+        <div id="main-page-programming-image-wrapper-content">
 
           <img id="main-page-programming-image" src="images/programming.jpg">
           <div id="main-page-content">
@@ -65,13 +64,13 @@
                               <button id="slide-button-1" type="submit" class="btn btn-default main-page-button">Résumé</button>
                             </form>
                           </li>
-                          <li><a id="slide-button-2" href="?option=work-experience" class="btn btn-default main-page-button">Work</a></li>
-                          <li><a id="slide-button-3" href="?option=skills" class="btn btn-default main-page-button">Skills</a></li>
+                          <li><a id="slide-button-2" href="/#work-experience-stripe" class="btn btn-default main-page-button">Work</a></li>
+                          <li><a id="slide-button-3" href="/#skills-stripe" class="btn btn-default main-page-button">Skills</a></li>
                         </ul>
                       </li>
                     </ul>
 
-                    <section id="work-experience-section" class="container content-section">
+                    <section id="work-experience-stripe" class="container content-section">
                       <div class="col-lg-8">
                         <h2 class="main-page-projects-title">Work Experience</h2>
 
@@ -156,51 +155,117 @@
 
                     </section>
 
-                    
-
                   </div>
                 </div>
               </div>
             </section>
           </div>
 
-          <div class="black-stripe" id="projects-stripe">
+          <div class="black-stripe container" id="projects-stripe">
 
             <h2 class="main-page-projects-title center-stripe">Projects</h2>
               <ul class="img-list">
                 <li>
-                  <a href="?option=projects-bookmyroom">
+                  <a id="href-bookmyroom">
                     <img class="projects-with-text" src="images/bmr.png" width="150" height="150" />
-                    <span class="text-content"><span>Book My Room</span></span>
+                    <span class="text-content"><span class="href-project" id="bookmyroom-project-id">Book My Room</span></span>
                   </a>
                 </li>
                 <li>
-                  <a href="?option=projects-blackjack">
+                  <a id="href-blackjack">
                     <img class="projects-with-text" src="images/blackjack-thumbnail.JPG" width="150" height="150" />
-                    <span class="text-content"><span>Blackjack Application</span></span>
+                    <span class="text-content"><span class="href-project" id="blackjack-project-id">Blackjack Application</span></span>
                   </a>
                 </li>
                 <li>
-                  <a href="?option=projects-ir-robot">
+                  <a id="href-ir-robot">
                     <img class="projects-with-text" src="images/ir-robot2.png" width="150" height="150" />
-                    <span class="text-content"><span>IR Tracking Robot</span></span>
+                    <span class="text-content"><span class="href-project" id="ir-project-id">IR Tracking Robot</span></span>
                   </a>
                 </li>
               </ul>
               <ul class="img-list">
                 <li>
-                  <a href="?option=projects-encoder_decoder">
+                  <a id="href-encoder-decoder">
                     <img class="projects-with-text" src="images/lock.jpg" width="150" height="150" />
-                    <span class="text-content"><span>Encoder/Decoder</span></span>
+                    <span class="text-content"><span class="href-project" id="encoder_decoder-project-id">Encoder/Decoder</span></span>
                   </a>
                 </li>
                 <li>
-                  <a href="?option=projects-personal_website">
+                  <a id="href-resume">
                     <img class="projects-with-text" src="images/person-white.png" width="150" height="150" />
-                    <span class="text-content"><span>Résumé Website</span></span>
+                    <span class="text-content"><span class="href-project">Résumé Website</span></span>
                   </a>
                 </li>
               </ul>
+
+            <div id="projects-content">
+              <section id="projects-section" class="container content-section">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                      <!--<h1 class="content-header">Projects</h1>-->
+
+                      <div id="ir-project" class="project-container" hidden>
+                        <h3 class="indented-content project-title project-changing-header">Automated IR Signal Tracking Robot</h3>
+                        <ul class="indented-content-projects">
+                          <li>
+                            <p class="indented-content-projects">This first year engineering project consisted of  programming and building an</p> 
+                            <p class="indented-content-projects">autonomous robot that detects IR signals using C</p>
+                          </li>
+                          <li>
+                            <iframe id="IR-robot-video" width="560" height="315" src="https://www.youtube.com/embed/sPHa-oSBYXs" frameborder="0" allowfullscreen></iframe></br>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="project-container" id="bookmyroom-project" hidden>
+                        <h3 class="indented-content project-title project-changing-header">Study Room Booking Website</h3>
+                        <ul class="indented-content-projects">
+                          <li><p class="indented-content-projects">This second year software engineering project consisted of creating a booking website for university study rooms</li>
+                          <li><p class="indented-content-projects">This website was created using the MEAN stack (MongoDB, Express.js, AngularJS, and Node.js)</li>
+                          <li><p class="indented-content-projects">Here's the link and login information if you wanna check it out:</li>
+                          <li><a id="bmr-website" class="indented-content-projects" href="http://bookmyroom.herokuapp.com/">Book My Room Website</a></li>
+                          <li><p class="indented-content-projects">Username: admin</p></li>
+                          <li><p class="indented-content-projects">Password: adminadmin123</p></li>
+                          <li><img class=".img-thumbnail" id="bmr-image" src="images/bookmyroom.png" width="590" height="400"></li>
+                          <li>
+                            <div class="img-wrapper">
+                              <a class="social-media-info github-project" href="https://github.com/SENG299/BookMyRoom"><span class="fa-stack fa-3x"><i class="fa fa-github" aria-hidden="true"></i></span>Check the Book My Room code on Github</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="project-container" id="blackjack-project" hidden>
+                        <h3 class="indented-content project-title project-changing-header">C++ Desktop Blackjack Application</h3>
+                        <ul class="indented-content-projects">
+                          <li>Currently working on an online Blackjack desktop application written in C++ using SFML (Simple and Fast Multimedia Library)</li>
+                          <li><img class=".img-thumbnail" id="blackjack-image" src="images/blackjack.png" width="400" height="400"></li>
+                          <li>
+                            <div class="img-wrapper">
+                              <a class="social-media-info github-project" href="https://github.com/gordillo99/BlackJackGameWithGUI"><span class="fa-stack fa-3x"><i class="fa fa-github" aria-hidden="true"></i></span>Check the Blackjack code on Github</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div id="encoder_decoder-project" class="project-container" hidden>
+                        <h3 class="indented-content project-title project-changing-header">C/Python Move-to-Front Encoder and Decoder</h3>
+                        <ul class="indented-content-projects">
+                          <li>Created a “move-to-front” encoder and decoder written in Python and then in C </li>
+                          <li>
+                            <div class="img-wrapper">
+                              <a class="social-media-info github-project" href="https://github.com/gordillo99"><span class="fa-stack fa-3x"><i class="fa fa-github" aria-hidden="true"></i></span>Check the Encoder/Decoder code on Github</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+
+              </section>
+            </div>    
         
           </div> <!--black stripe -->
 
@@ -377,99 +442,6 @@
 
       </div> <!-- da wrapper -->
 
-        <div id="projects-content" hidden>
-          <section id="projects-section" class="container content-section">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                  <h1 class="content-header">Projects</h1>
-
-                  <div class="project-container">
-                    <h3 class="indented-content project-title project-changing-header">Automated IR Signal Tracking Robot</h3>
-                    <ul class="indented-content-projects">
-                      <li>
-                        <p class="indented-content-projects">This first year engineering project consisted of  programming and building an</p> 
-                        <p class="indented-content-projects">autonomous robot that detects IR signals using C</p>
-                      </li>
-                      <li>
-                        <iframe id="IR-robot-video" width="560" height="315" src="https://www.youtube.com/embed/sPHa-oSBYXs" frameborder="0" allowfullscreen></iframe></br>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="project-container" id="bookmyroom-project">
-                    <h3 class="indented-content project-title project-changing-header">Study Room Booking Website</h3>
-                    <ul class="indented-content-projects">
-                      <li><p class="indented-content-projects">This second year software engineering project consisted of creating a booking website for university study rooms</li>
-                      <li><p class="indented-content-projects">This website was created using the MEAN stack (MongoDB, Express.js, AngularJS, and Node.js)</li>
-                      <li><p class="indented-content-projects">Here's the link and login information if you wanna check it out:</li>
-                      <li><a class="indented-content-projects" href="http://bookmyroom.herokuapp.com/">Book My Room Website</a></li>
-                      <li><p class="indented-content-projects">Username: admin</p></li>
-                      <li><p class="indented-content-projects">Password: adminadmin123</p></li>
-                      <li><img class=".img-thumbnail" id="bmr-image" src="images/bookmyroom.png" width="590" height="400"></li>
-                      <li>
-                        <div class="img-wrapper">
-                          <a class="social-media-info github-project" href="https://github.com/SENG299/BookMyRoom"><span class="fa-stack fa-3x"><i class="fa fa-github" aria-hidden="true"></i></span>Check the Book My Room code on Github</a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="project-container" id="blackjack-project">
-                    <h3 class="indented-content project-title project-changing-header">C++ Desktop Blackjack Application</h3>
-                    <ul class="indented-content-projects">
-                      <li>Currently working on an online Blackjack desktop application written in C++ using SFML (Simple and Fast Multimedia Library)</li>
-                      <li><img class=".img-thumbnail" id="blackjack-image" src="images/blackjack.png" width="400" height="400"></li>
-                      <li>
-                        <div class="img-wrapper">
-                          <a class="social-media-info github-project" href="https://github.com/gordillo99/BlackJackGameWithGUI"><span class="fa-stack fa-3x"><i class="fa fa-github" aria-hidden="true"></i></span>Check the Blackjack code on Github</a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="project-container">
-                    <h3 class="indented-content project-title project-changing-header">C/Python Move-to-Front Encoder and Decoder</h3>
-                    <ul class="indented-content-projects">
-                      <li>Created a “move-to-front” encoder and decoder written in Python and then in C </li>
-                      <li>
-                        <div class="img-wrapper">
-                          <a class="social-media-info github-project" href="https://github.com/gordillo99"><span class="fa-stack fa-3x"><i class="fa fa-github" aria-hidden="true"></i></span>Check the Encoder/Decoder code on Github</a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-
-                </div>
-              </div>
-
-          </section>
-        </div>
-
-        <div id="about-content" hidden>
-          <section id="about-section" class="container content-section">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2">
-                  <h1 class="content-header">About</h1></br>
-                  <div class="about-text">
-                    <p><img class="img-thumbnail" id="about-image" src="images/jj-pic.jpg" width="195" height="280">
-                      I'm on my 3rd year of Sotftware Engineering at the University of Victoria. I am originally from Guatemala. I'm an extroverted and friendly guy. 
-                    </p>
-                    <p>
-                      I started programming at the age of 13. I started learning DarkBasic, a Basic-based language used for video game development. I got even more engaged with programming when I was 18. I started taking an algorithms course at a university in Guatemala. I immediately recognized my love for programming. 
-                    </p>
-                    <p>   
-                      Lately, I have mostly been focusing on web development. I have worked with AngularJS on school projects, and with Ruby on Rails and Rendr on co-ops. I am also quite interested in React.js. My favorite language is C++. I love having more direct control over the memory while still having a fast language with the advantages of OOP. I am also a huge fan of smart pointers. 
-                    </p>
-                    <p>   
-                      My hobbies are playing tennis, scuba diving, reading about philosophy and quantum physics, programming, and playing video games. 
-                    </p>
-                  </div>
-                </div>
-              </div>
-          </section>
-        </div>
-
-        
         <!--
         <div id="footer">
 

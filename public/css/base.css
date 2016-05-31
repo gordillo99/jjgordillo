@@ -1,3 +1,7 @@
+.container {
+  padding-left: 0px;
+}
+
 /* Wrapper for page content to push down footer */
 #centered-content {
   min-height: 100%;
@@ -51,6 +55,7 @@
   border:4px solid black;
   transition: border 0.8s ease;
   float: left;
+  color: #07BFB6;
 }
 
 .navbar-link:hover, .navbar-link:active{
@@ -249,7 +254,7 @@ ul.img-list li {
 }
 
 .projects-with-text {
-  border: 5px solid white;
+  border: 5px solid #07BFB6;
   margin-bottom: 40px;
 }
 
@@ -309,8 +314,9 @@ iframe {
   padding-left: 40px;
 }
 
-#bmr-link {
-  font-family: Consolas;
+#bmr-website {
+  font-weight: bold;
+  color: #07BFB6;
 }
 
 #contact-rectangle {
@@ -391,12 +397,17 @@ iframe {
   margin-bottom: 0px;
 }
 
+.indented-content-projects {
+  color: white;
+}
+
 .job-description, .indented-content-projects{
   list-style-type: none;
 }
 
 .github-project {
-  color: black;
+  color: white;
+  text-align: center;
 }
 
 .img-wrapper:hover .fa-stack{
@@ -445,20 +456,35 @@ iframe {
   100% { transform: translateY(2px); }
 }
 
-.skill-column, .job-column, .project-container {
+.skill-column, .job-column {
+  position: relative;
   border:4px solid white;
   transition: border 0.6s ease;
 }
 
-.skill-column:hover, .job-column:hover, .project-container:hover {
+.skill-column:hover, .job-column:hover {
   border:4px solid black;
 }
 
-.job-column-changing-header, .project-changing-header {
+.project-container {
+  position: relative;
+  border:4px solid black;
+  transition: border 0.6s ease;
+}
+
+.project-container:hover {
+  border:4px solid white;
+}
+
+.job-column-changing-header {
   color: black;
 }
 
-.job-column:hover .skill-column-changing-header, .project-container:hover .project-changing-header {
+.project-changing-header {
+  color: #07BFB6;
+}
+
+.job-column:hover .skill-column-changing-header {
   color: #07BFB6;
 }
 
@@ -491,16 +517,9 @@ iframe {
   font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
 }
 
-#about-image {
-  box-shadow: 10px 10px 5px #888888;
-  border: 2px solid black;
-  float: right;
-  margin: 0px 0px 180px 20px;
-}
-
 #bmr-image, #blackjack-image {
-  box-shadow: 10px 10px 5px #888888;
-  border: 1px solid black;
+  border: 4px solid #07BFB6;
+  text-align: center;
 }
 
 #blackjack-image {
@@ -510,13 +529,14 @@ iframe {
 #IR-robot-video {
   margin-bottom: 30px;
   padding-left: 0px;
-  box-shadow: 10px 10px 5px #888888;
-  border: 1px solid black;
+  border: 4px solid #07BFB6;;
 }
 
 .project-title {
   font-family: Gill Sans, Verdana;
   font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
 .indented-content-projects {
