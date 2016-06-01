@@ -28,6 +28,7 @@
   border-bottom: 7px solid rgba(7, 191, 182, 1);
   height: 70px;
   width: 100%;
+  color: #07BFB6;
 }
 
 .navbar-default .navbar-brand {
@@ -47,6 +48,14 @@
 
 .navbar-default .navbar-nav > li > a:hover {
   color: white;
+}
+
+.navbar-default .navbar-nav > li > a:active {
+  color: white;
+}
+
+.navbar-default .navbar-link {
+  color: #07BFB6;
 }
 
 .navbar-link {
@@ -92,7 +101,7 @@
   left: 0px;
   top: 0px;
   width:100%;
-  height: 480px;
+  height: 680px;
   z-index: -1;
 }
 
@@ -114,9 +123,13 @@
 }
 
 #main-jj-image {
-  margin-top: 80px;
+  position: absolute; 
+  top: -100px;
+  margin-top: 120px;
+  margin-bottom: 260px;
   border: 2px solid black;
   border-radius: 50%;
+  margin-left: 210px;
 }
 
 .main-page-content {
@@ -159,7 +172,7 @@
   font-size: 40px;
   margin-right: 27px;
   height: 90px;
-  width: 180px;
+  width: 420px;
   line-height: 80px;
 }
 
@@ -225,13 +238,75 @@
   100% { right: 0; }
 }
 
+/* MAIN PAGE CAROUSEL */
+
+#myCarousel {
+  margin-left: 40px;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+
+.carousel-rectangle {
+  width: 100%;
+  height: 560px;
+}
+
+#Carousel-Btn-1 {
+  position: absolute;
+  top: 385px;
+  left: 155px;
+}
+
+.carousel-content {
+  position: absolute;
+  top: 40px;
+  height: 440px;
+  width: 530px;
+  background-color: white;
+  border-radius: 3px;
+  border: 2px solid black;
+  margin-left: 96px;
+}
+
+.carousel-header {
+  font-size: 50px;
+  color: #07BFB6; 
+  font-family: Gill Sans, Verdana;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+#carousel-table {
+  margin-left: 135px;
+  margin-top: 40px;
+}
+
+#carousel-table th, #carousel-table td{
+  padding-bottom: 15px;
+  padding-left: 30px;
+}
+
+#carousel-table td {
+  font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+  margin-right: 40px;
+}
+
+#carousel-table th {
+  font-family: Gill Sans, Verdana;
+}
+
+#carousel-table th:hover{
+  color: #07BFB6; 
+}
+
 /* MAIN PAGE PROJECTS */
 
 .main-page-projects-title {
   font-size: 60px;
   color: #07BFB6; 
   font-family: Gill Sans, Verdana;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 30px;
   text-align: center;
 }

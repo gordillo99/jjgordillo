@@ -55,7 +55,7 @@
                 <div class="col-lg-8 col-lg-offset-2">
                   <div class="main-page-intro-content">
 
-                    <ul>
+                    <!--<ul>
                       <li class="main-page-image-list-element"><img class=".img-thumbnail" id="main-jj-image" src="images/circular-jj.png" width="300" height="300"></li>
                       <li class="main-page-image-list-element">
                         <ul class="welcome-page-buttons">
@@ -66,7 +66,71 @@
                           </li>
                           <li><a id="slide-button-2" href="/#work-experience-stripe" class="btn btn-default main-page-button">Work</a></li>
                           <li><a id="slide-button-3" href="/#skills-stripe" class="btn btn-default main-page-button">Skills</a></li>
-                        </ul>
+                        </ul>-->
+
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                          <!-- Indicators -->
+                          <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                          </ol>
+
+                          <!-- Wrapper for slides -->
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                              <div class="carousel-rectangle">
+                                <img class=".img-thumbnail" id="main-jj-image" src="images/circular-jj.png" width="300" height="300">
+                                <form method="get" action="files/JoseGordilloResume.pdf">
+                                  <button id="Carousel-Btn-1" type="submit" class="btn btn-default main-page-button">Check Out My Résumé</button>
+                                </form>
+                              </div>
+                            </div>
+
+                            <div class="item">
+                              <div class="carousel-rectangle">
+                                <div class="carousel-content">
+                                  <h1 class="carousel-header">Profile</h1>
+                                  <table id="carousel-table">
+                                    <tr>
+                                      <th>Name</th>
+                                      <th>Age</th>
+                                    </tr>
+                                    <tr>
+                                      <td>José Gordillo</td>
+                                      <td>23</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Major</th>
+                                      <th>University</th>
+                                    </tr>
+                                    <tr>
+                                      <td>Software</br>Engineering</td>
+                                      <td>University of</br>Victoria</td>
+                                    </tr>
+                                    <tr>
+                                      <th>Location</th>
+                                      <th>School Year</th>
+                                    </tr>
+                                    <tr>
+                                      <td>Victoria, BC</td>
+                                      <td>3rd</td>
+                                    </tr>
+                                  </table>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Left and right controls -->
+                          <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                        </div>
                       </li>
                     </ul>
 
@@ -194,7 +258,7 @@
                 <li>
                   <a id="href-resume">
                     <img class="projects-with-text" src="images/person-white.png" width="150" height="150" />
-                    <span class="text-content"><span class="href-project">Résumé Website</span></span>
+                    <span class="text-content"><span id="resume-project-id" class="href-project">Résumé Website</span></span>
                   </a>
                 </li>
               </ul>
@@ -256,6 +320,18 @@
                           <li>
                             <div class="img-wrapper">
                               <a class="social-media-info github-project" href="https://github.com/gordillo99"><span class="fa-stack fa-3x"><i class="fa fa-github" aria-hidden="true"></i></span>Check the Encoder/Decoder code on Github</a>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div id="resume-project" class="project-container" hidden>
+                        <h3 class="indented-content project-title project-changing-header">Résumé Webiste</h3>
+                        <ul class="indented-content-projects">
+                          <li>This website was created from scratch (without using templates) using jQuery, Bootstrap, and Node.js</li>
+                          <li>
+                            <div class="img-wrapper">
+                              <a class="social-media-info github-project" href="https://github.com/gordillo99/jjgordillo"><span class="fa-stack fa-3x"><i class="fa fa-github" aria-hidden="true"></i></span>Check the Résumé Website code on Github</a>
                             </div>
                           </li>
                         </ul>
@@ -416,7 +492,7 @@
                   <h1 class="main-page-projects-title">Contact</h1></br>
                   <div>
                     <p class="contact-info">Email: gordillo \at\ uvic \dot\ ca</p>
-                    <p class="contact-info">Location: Birchwood Street, Victoria, BC</p>
+                    <p class="contact-info">Location: Victoria, BC, Canada</p>
                       <ul class="social-media">
                         <li>
                           <div class="img-wrapper">
