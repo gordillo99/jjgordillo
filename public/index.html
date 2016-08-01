@@ -55,19 +55,6 @@
                 <div class="col-lg-8 col-lg-offset-2">
                   <div class="main-page-intro-content">
 
-                    <!--<ul>
-                      <li class="main-page-image-list-element"><img class=".img-thumbnail" id="main-jj-image" src="images/circular-jj.png" width="300" height="300"></li>
-                      <li class="main-page-image-list-element">
-                        <ul class="welcome-page-buttons">
-                          <li>
-                            <form method="get" action="files/JoseGordilloResume.pdf">
-                              <button id="slide-button-1" type="submit" class="btn btn-default main-page-button">Résumé</button>
-                            </form>
-                          </li>
-                          <li><a id="slide-button-2" href="/#work-experience-stripe" class="btn btn-default main-page-button">Work</a></li>
-                          <li><a id="slide-button-3" href="/#skills-stripe" class="btn btn-default main-page-button">Skills</a></li>
-                        </ul>-->
-
                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
                           <!-- Indicators -->
                           <ol class="carousel-indicators">
@@ -148,8 +135,9 @@
                             <li class="right-aligned-header"><h4 class=" header-no-margin-top"><i class="fa fa-map-marker" aria-hidden="true"></i>Victoria, BC</h4></li>
                           </ul>
                           <ul class="job-description">
-                            <li>Designed and programmed new features for the Change.org website using Ruby on Rails, HTML, and CSS</li>
-                            <li>Fixed bugs on the website using Rendr (with Backbone.js)</li>
+                            <li>Designed and programmed new features (both back-end and front-end) for the Change.org website.</li>
+                            <li>Fixed bugs on the website.</li>
+                            <li>One one of the codebases involved was written using Rendr (with Backbone.js) and Node.js along with Emblem.js and the other one with Ruby on Rails.</li>
                           </ul>
                         </div>
 
@@ -201,7 +189,7 @@
                           </ul>
                         </div>
 
-                        <div class="job-column">
+                        <div class="job-column  margin-bottom-20px">
                           <ul class="position-and-workplace">
                             <li><h3 class="header-no-margin-bottom skill-column-changing-header" >Lab Technician</h3></li>
                             <li class="right-aligned-header"><h3 class="header-no-margin-bottom skill-column-changing-header">Atel Communications</h3></li>
@@ -230,9 +218,9 @@
             <h2 class="main-page-projects-title center-stripe">Projects</h2>
               <ul class="img-list">
                 <li>
-                  <a id="href-bookmyroom">
-                    <img class="projects-with-text" src="images/bmr.png" width="150" height="150" />
-                    <span class="text-content"><span class="href-project" id="bookmyroom-project-id">Book My Room</span></span>
+                  <a id="href-fixo">
+                    <img class="white-background projects-with-text" src="images/fixo.png" width="150" height="150" />
+                    <span class="text-content"><span class="href-project" id="fixo-project-id">fixo</span></span>
                   </a>
                 </li>
                 <li>
@@ -249,6 +237,12 @@
                 </li>
               </ul>
               <ul class="img-list">
+                <li>
+                  <a id="href-bookmyroom">
+                    <img class="projects-with-text" src="images/bmr.png" width="150" height="150" />
+                    <span class="text-content"><span class="href-project" id="bookmyroom-project-id">Book My Room</span></span>
+                  </a>
+                </li>
                 <li>
                   <a id="href-encoder-decoder">
                     <img class="projects-with-text" src="images/lock.jpg" width="150" height="150" />
@@ -279,6 +273,19 @@
                           <li>
                             <iframe id="IR-robot-video" width="560" height="315" src="https://www.youtube.com/embed/sPHa-oSBYXs" frameborder="0" allowfullscreen></iframe></br>
                           </li>
+                        </ul>
+                      </div>
+
+                      <div class="project-container" id="fixo-project" hidden>
+                        <h3 class="indented-content project-title project-changing-header">Handymen Crowdsourcing Website</h3>
+                        <ul class="indented-content-projects">
+                          <li><p class="indented-content-projects">The point of this website is to create a portal where people looking for handymen can find what they are looking for.</li>
+                          <li><p class="indented-content-projects">It currently is only available in Guatemala, but it will expand to other latin american countries some time in the future!</li>
+                          <li><p class="indented-content-projects">This website was created using the React.js on the front-end along with Webpack, Babel, Express.js, and Node.js. It also uses a PostgreSQL database.</li>
+                          <li><p class="indented-content-projects">Here's the link if you wanna check it out:</li>
+                          <li><a id="bmr-website" class="indented-content-projects" href="http://fixo.herokuapp.com/">fixo Website</a></li>
+                          </br>
+                          <li><img class=".img-thumbnail" id="bmr-image" src="images/fixo_main_page.png" width="590" height="400"></li>
                         </ul>
                       </div>
 
@@ -370,9 +377,9 @@
                   <div class="col-xs-5 skill-column">
                     <ul>
                       <h1 class="skills-title">Computer Science Knowledge</h1>
+                      <li> Web Programming </li>
                       <li>Object-Oriented Programming</li> 
-                      <li>Aspect-Oriented Programming</li> 
-                      <li>Web Programming</li> 
+                      <li>Aspect-Oriented Programming</li>  
                       <li>Design Patterns</li> 
                       <li>MVC Architecture</li> 
                       <li>Algorithms</li>
@@ -403,6 +410,7 @@
                   <div class="col-xs-5 skill-column">
                     <ul>
                       <h1 class="skills-title">Database Technologies</h1>
+                      <li>PostgreSQL</li>
                       <li>SQL Server</li> 
                       <li>MySQL</li> 
                       <li>MongoDB</li> 
@@ -417,12 +425,13 @@
                 <div class="row skills-row">
                   <div class="col-xs-5 skill-column">
                     <ul>
-                      <h1 class="skills-title">Software Frameworks</h1>
+                      <h1 class="skills-title">Software Frameworks/Libraries</h1>
+                      <li>React.js</li>  
                       <li>AngularJS</li>  
-                      <li>Node.js</li> 
-                      <li>Express.js</li> 
                       <li>Ruby on Rails</li> 
                       <li>Rendr (with Backbone.js)</li>  
+                      <li>Node.js</li> 
+                      <li>Express.js</li> 
                       <li>jQuery</li> 
                       <li>Spring</li> 
                       <li>SmartClient</li> 
@@ -430,12 +439,14 @@
                   </div>
                   <div class="col-xs-5 skill-column">
                     <ul>
-                      <h1 class="skills-title">Automation Software</h1>
+                      <h1 class="skills-title">Testing Software</h1>
                       <li>JUnit</li> 
+                      <li>Chai</li>
+                      <li>Mocha</li>
+                      <li>Rspec</li>
                       <li>Selenium</li> 
                       <li>Google UI Automator</li> 
                       <li>Robotium</li> 
-                      <li>Mocha</li>
                     </ul>
                   </div>
                 </div>
