@@ -7,7 +7,8 @@ $(document).ready(function() {
 			showDiv(project, $("#projects-stripe"));
 	});
 
-	$(".navbar-link, #slide-button-2, #slide-button-3").on('click', function(event) {
+	$(".scroll-to-target, .navbar-link, #slide-button-2, #slide-button-3").on('click', function(event) {
+		console.log('asdfasdfasdf');
 	    // Make sure this.hash has a value before overriding default behavior
 	    if (this.hash !== "") {
 	      // Prevent default anchor click behavior
