@@ -2,11 +2,6 @@ Personal Website
 
 Created from scratch using Bootstrap and jQuery. Hosted using Heroku.
 
-TODOs: 
+Start local environment running: node index.js
 
-- changing images on about page
-- add info about BMR and IR tracking robot to projects page
-- add github links for each project
-- add the companies' logos to work experience page
-- add more interesting animations/effects
-- add icons for menu/titles???
+Website can be seen at jjgordillo.herokuapp.com
