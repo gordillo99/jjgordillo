@@ -1,3 +1,7 @@
+.container {
+  padding-left: 0px;
+}
+
 /* Wrapper for page content to push down footer */
 #centered-content {
   min-height: 100%;
@@ -23,6 +27,8 @@
   border-color: white;
   border-bottom: 7px solid rgba(7, 191, 182, 1);
   height: 70px;
+  width: 100%;
+  color: #07BFB6;
 }
 
 .navbar-default .navbar-brand {
@@ -44,15 +50,30 @@
   color: white;
 }
 
+.navbar-default .navbar-nav > li > a:active {
+  color: white;
+}
+
+.navbar-default .navbar-link {
+  color: #07BFB6;
+}
+
 .navbar-link {
   font-size: 18px;
   font-family: Gill Sans, Verdana;
   border:4px solid black;
   transition: border 0.8s ease;
+  float: left;
+  color: #07BFB6;
 }
 
 .navbar-link:hover, .navbar-link:active{
   border:4px solid white;
+}
+
+.sticky {
+  position:fixed;
+  top:0;
 }
 
 /* MAIN CONTAINER */
@@ -63,8 +84,24 @@
   right: 0;
   bottom: 0;
   left: 0;
-  margin-top: 80px;
+  /*margin-top: 80px;*/
   margin-bottom: 25px;
+  z-index: -1;
+}
+
+#main-page-programming-image-wrapper-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+#main-page-programming-image {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width:100%;
+  height: 680px;
   z-index: -1;
 }
 
@@ -73,18 +110,43 @@
 
 /* MAIN PAGE CONTENT */
 
+.black-stripe {
+  position: relative;
+  background-color: black;
+  height: 550px;
+  width: 100%;
+}
+
+.black-stripe2{
+  margin-top: 20px;
+  height: 320px;
+}
+
 #main-jj-image {
-  margin-top: 40px;
+  position: absolute; 
+  top: -100px;
+  margin-top: 120px;
+  margin-bottom: 260px;
   border: 2px solid black;
   border-radius: 50%;
+  margin-left: 210px;
+}
+
+.main-page-content {
+  float: left;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 1000;
 }
 
 .main-page-intro-content ul{
   list-style-type: none;
 }
 
-.main-page-intro-content li{
+.main-page-image-list-element{
   display: inline-block;
+  vertical-align: middle;
 }
 
 .main-page-salute {
@@ -102,9 +164,16 @@
   margin-bottom: 40px;
 }
 
+.center-stripe {
+  padding-top: 40px;
+}
+
 .main-page-button {
-  font-size: 40px;
+  font-size: 35px;
   margin-right: 27px;
+  height: 90px;
+  width: 420px;
+  line-height: 80px;
 }
 
 .btn-default {
@@ -119,8 +188,12 @@
 }
 
 .welcome-page-buttons {
-  margin-left: 100px;
-  margin-bottom: 25px;
+  margin-left: 65px;
+  margin-top: 100px;
+}
+
+.welcome-page-buttons li{
+  padding-bottom: 45px;
 }
 
 .main-page-some-projects {
@@ -130,11 +203,117 @@
   margin-bottom: 40px;
 }
 
+#slide-button-1 {
+  position: relative;
+  right: -2000px;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 0.4s;
+  animation: slide 0.5s forwards;
+  animation-delay: 0.4s;
+}
+
+#slide-button-2 {
+  position: relative;
+  right: -2000px;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 0.8s;
+  animation: slide 0.5s forwards;
+  animation-delay: 0.8s;
+}
+
+#slide-button-3 {
+  position: relative;
+  right: -2000px;
+  -webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 1.2s;
+  animation: slide 0.5s forwards;
+  animation-delay: 1.2s;
+}
+
+@-webkit-keyframes slide {
+  100% { right: 0; }
+}
+
+@keyframes slide {
+  100% { right: 0; }
+}
+
+/* MAIN PAGE CAROUSEL */
+
+#myCarousel {
+  margin-left: 40px;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+
+.carousel-rectangle {
+  width: 100%;
+  height: 560px;
+}
+
+#Carousel-Btn-1 {
+  position: absolute;
+  top: 385px;
+  left: 155px;
+}
+
+.carousel-content {
+  position: absolute;
+  top: 40px;
+  height: 440px;
+  width: 530px;
+  background-color: white;
+  border-radius: 3px;
+  border: 2px solid black;
+  margin-left: 96px;
+}
+
+.carousel-header {
+  font-size: 50px;
+  color: #07BFB6; 
+  font-family: Gill Sans, Verdana;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+#carousel-table {
+  margin-left: 135px;
+  margin-top: 40px;
+}
+
+#carousel-table th, #carousel-table td{
+  padding-bottom: 15px;
+  padding-left: 30px;
+}
+
+#carousel-table td {
+  font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+  margin-right: 40px;
+}
+
+#carousel-table th {
+  font-family: Gill Sans, Verdana;
+}
+
+#carousel-table th:hover{
+  color: #07BFB6; 
+}
+
 /* MAIN PAGE PROJECTS */
+
+.main-page-projects-title {
+  font-size: 60px;
+  color: #07BFB6; 
+  font-family: Gill Sans, Verdana;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
 
 ul.img-list {
   list-style-type: none;
-  margin: 0;
+  margin: 0 0 40px 0;
   padding: 0;
   text-align: center;
 }
@@ -149,41 +328,19 @@ ul.img-list li {
   margin-right: 30px;
 }
 
-.projects-with-text {
-  box-shadow: 10px 10px 5px #888888;
-  border: 1px solid black;
-  margin-bottom: 40px;
+.white-background {
+  background-color: white;
 }
 
-span.text-content {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 150px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 150px;
+.projects-with-text {
+  border: 5px solid #07BFB6;
+  margin-bottom: 40px;
 }
 
 span.text-content span {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-}
-
-span.text-content {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 150px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 150px;
-  opacity: 0;
 }
 
 ul.img-list li:hover span.text-content {
@@ -193,6 +350,7 @@ ul.img-list li:hover span.text-content {
 span.text-content {
   background: rgba(0,0,0,0.5);
   color: white;
+  font-weight: bold;
   cursor: pointer;
   display: table;
   height: 150px;
@@ -219,6 +377,7 @@ span.text-content {
 }
 
 .content-header {
+  margin-top: 100px;
   color: #07BFB6;
 }
 
@@ -234,8 +393,9 @@ iframe {
   padding-left: 40px;
 }
 
-#bmr-link {
-  font-family: Consolas;
+#bmr-website {
+  font-weight: bold;
+  color: #07BFB6;
 }
 
 #contact-rectangle {
@@ -249,7 +409,7 @@ iframe {
 }
 
 .contact-info {
-  padding-left: 20px;
+  text-align: center;
   color: #07BFB6;
   font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
   font-size: 16px;
@@ -316,12 +476,17 @@ iframe {
   margin-bottom: 0px;
 }
 
+.indented-content-projects {
+  color: white;
+}
+
 .job-description, .indented-content-projects{
   list-style-type: none;
 }
 
 .github-project {
-  color: black;
+  color: white;
+  text-align: center;
 }
 
 .img-wrapper:hover .fa-stack{
@@ -370,20 +535,39 @@ iframe {
   100% { transform: translateY(2px); }
 }
 
-.skill-column, .job-column, .project-container {
+.skill-column, .job-column {
+  position: relative;
   border:4px solid white;
   transition: border 0.6s ease;
 }
 
-.skill-column:hover, .job-column:hover, .project-container:hover {
+.margin-bottom-20px {
+  margin-bottom: 20px;
+}
+
+.skill-column:hover, .job-column:hover {
   border:4px solid black;
 }
 
-.job-column-changing-header, .project-changing-header {
+.project-container {
+  position: relative;
+  border:4px solid black;
+  transition: border 0.6s ease;
+}
+
+.project-container:hover {
+  border:4px solid white;
+}
+
+.job-column-changing-header {
   color: black;
 }
 
-.job-column:hover .skill-column-changing-header, .project-container:hover .project-changing-header {
+.project-changing-header {
+  color: #07BFB6;
+}
+
+.job-column:hover .skill-column-changing-header {
   color: #07BFB6;
 }
 
@@ -416,17 +600,9 @@ iframe {
   font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
 }
 
-#about-image {
-  box-shadow: 10px 10px 5px #888888;
-  border: 2px solid black;
-  margin-bottom: 180px;
-  float: right;
-  margin: 0px 0px 15px 20px;
-}
-
 #bmr-image, #blackjack-image {
-  box-shadow: 10px 10px 5px #888888;
-  border: 1px solid black;
+  border: 4px solid #07BFB6;
+  text-align: center;
 }
 
 #blackjack-image {
@@ -436,13 +612,14 @@ iframe {
 #IR-robot-video {
   margin-bottom: 30px;
   padding-left: 0px;
-  box-shadow: 10px 10px 5px #888888;
-  border: 1px solid black;
+  border: 4px solid #07BFB6;;
 }
 
 .project-title {
   font-family: Gill Sans, Verdana;
   font-weight: bold;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
 .indented-content-projects {
@@ -451,7 +628,7 @@ iframe {
 
 /* MAIN PAGE ANIMATIONS */
 
-#main-jj-image, #about-image {
+#about-image {
   -moz-animation-name: showLogoSlowly;
   -moz-animation-iteration-count: 1;
   -moz-animation-timing-function: ease-out;
