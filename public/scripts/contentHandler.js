@@ -8,7 +8,6 @@ $(document).ready(function() {
 	});
 
 	$(".scroll-to-target, .navbar-link, #slide-button-2, #slide-button-3").on('click', function(event) {
-		console.log('asdfasdfasdf');
 	    // Make sure this.hash has a value before overriding default behavior
 	    if (this.hash !== "") {
 	      // Prevent default anchor click behavior
@@ -48,7 +47,7 @@ function showDiv(option, container) {
 	$('.project-container').hide();
 	$option = container.find('#' + option);
 	$option.show();
-	container.height(550 + $option.height() + 50);
+	container.height(750 + $option.height() + 50);
 }
 
 function scrollToAnchor(anchor_id){
