@@ -113,7 +113,7 @@
 .black-stripe {
   position: relative;
   background-color: black;
-  height: 550px;
+  height: 750px;
   width: 100%;
 }
 
@@ -172,7 +172,7 @@
   font-size: 35px;
   margin-right: 27px;
   height: 90px;
-  width: 420px;
+  width: 455px;
   line-height: 80px;
 }
 
@@ -609,7 +609,7 @@ iframe {
   padding: 5px;
 }
 
-#IR-robot-video {
+#IR-robot-video, #rtos-video {
   margin-bottom: 30px;
   padding-left: 0px;
   border: 4px solid #07BFB6;;
